@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PAM_Calculator.Views.CalculatorView"
+             Title="CalculatorView">
+    <VerticalStackLayout Spacing="25" HorizontalOptions="Center">
+        <HorizontalStackLayout>
+            <Label Text="Resultado: " VerticalOptions="Center"/>
+            <Entry Text="{Binding Resultado}" Placeholder="Resultado" Keyboard="Numeric" WidthRequest="150" />
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout>
+            <Label Text="Primeiro Termo: " VerticalOptions="Center"/>
+            <Entry Text="{Binding PrimeiroTermo}" Placeholder="1º Termo" Keyboard="Numeric" WidthRequest="150"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout>
+            <Label Text="Segundo Termo: " VerticalOptions="Center"/>
+            <Entry Text="{Binding SegundoTermo}" Placeholder="2º Termo" Keyboard="Numeric" WidthRequest="150"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Button
+                Text="Somar" Command="{Binding SomarCommand}" WidthRequest="100"/>
+
+            <Button
+                Text="Subtrair" Command="{Binding SubtrairCommand}" WidthRequest="100"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Button
+                Text="Multiplicar" Command="{Binding MultiplicarCommand}" WidthRequest="100"/>
+            <Button
+                Text="Dividir" Command="{Binding DividirCommand}" WidthRequest="100"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Button
+                Text="Elevar" Command="{Binding ElevarCommand}" WidthRequest="100"/>
+            <Button
+                Text="Raiz" Command="{Binding RaizCommand}" WidthRequest="100"/>
+        </HorizontalStackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>
