@@ -46,9 +46,7 @@ namespace PAM_Calculator.Models
         public double Raiz(double n1, double n2) {
             PrimeiroTermo = n1;
             SegundoTermo = n2;
-            for (int i = 0; i < n2; i++){
-                Resultado += Math.Sqrt(n1);
-            }
+            Resultado = Math.Pow(n1, 1.0 / n2);
             return Resultado;
         }
     }

@@ -4,11 +4,12 @@
              x:Class="PAM_Calculator.Views.CalculatorView"
              Title="CalculatorView">
     <VerticalStackLayout Spacing="25" HorizontalOptions="Center">
+        <Label Text="Calculadora"  HorizontalOptions="Center" FontSize="Title"/>
         <HorizontalStackLayout>
             <Label Text="Resultado: " VerticalOptions="Center"/>
             <Entry Text="{Binding Resultado}" Placeholder="Resultado" Keyboard="Numeric" WidthRequest="150" />
         </HorizontalStackLayout>
-        
+
         <HorizontalStackLayout>
             <Label Text="Primeiro Termo: " VerticalOptions="Center"/>
             <Entry Text="{Binding PrimeiroTermo}" Placeholder="1º Termo" Keyboard="Numeric" WidthRequest="150"/>
@@ -20,24 +21,24 @@
         </HorizontalStackLayout>
         
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-            <Button
+            <Button BackgroundColor="Gray"
                 Text="Somar" Command="{Binding SomarCommand}" WidthRequest="100"/>
 
-            <Button
+            <Button BackgroundColor="Gray"
                 Text="Subtrair" Command="{Binding SubtrairCommand}" WidthRequest="100"/>
         </HorizontalStackLayout>
 
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-            <Button
+            <Button BackgroundColor="Gray"
                 Text="Multiplicar" Command="{Binding MultiplicarCommand}" WidthRequest="100"/>
-            <Button
+            <Button BackgroundColor="Gray"
                 Text="Dividir" Command="{Binding DividirCommand}" WidthRequest="100"/>
         </HorizontalStackLayout>
 
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-            <Button
+            <Button BackgroundColor="Gray"
                 Text="Elevar" Command="{Binding ElevarCommand}" WidthRequest="100"/>
-            <Button
+            <Button BackgroundColor="Gray"
                 Text="Raiz" Command="{Binding RaizCommand}" WidthRequest="100"/>
         </HorizontalStackLayout>
         
